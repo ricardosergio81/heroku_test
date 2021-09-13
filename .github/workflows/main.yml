@@ -1,5 +1,7 @@
-name: '' #set whatevername you want to your github job
-on: {} # set the events you would like to trigger this job
+name: 'Deploy to heroku.' #set whatevername you want to your github job
+on:
+  push:
+    branches: [master]
 jobs:
   build:
     runs-on: ubuntu-latest
